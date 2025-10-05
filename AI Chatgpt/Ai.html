@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="AI.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1 class="heading">Hello, there</h1>
+      <h2 class="sub-heading">How can I help you?</h2>
+    </header>
+    
+
+<ul class="suggestions">
+  <li class="suggestion-items">
+    <p class="text">Design a home office setup for remote work under $500.</p>
+    <i class="fa-solid fa-pencil"></i>
+  </li>
+  <li class="suggestion-items">
+    <p class="text">How can I level up my web development expertise in 2025?</p>
+    <i class="fa-regular fa-lightbulb"></i>
+  </li>
+  <li class="suggestion-items">
+    <p class="text">Suggest some useful tools for debugging Javascript code.</p>
+  <i class="fa-regular fa-circle-user"></i>
+    
+  </li>
+  <li class="suggestion-items">
+    <p class="text">Create a React JS component for simple todo list app.</p>
+    <i class="fa-solid fa-laptop-code"></i>
+  </li>
+</ul>
+
+<div class="chats-container"></div>
+
+<div class="prompt-container">
+  <div class="prompt-wrapper">
+    <form action="#" class="prompt-form" style="display: flex; align-items: center;">
+      <div id="file-preview-area" style="margin-right: 12px; min-width: 110px;"></div>
+      <input type="text" placeholder="Ask Gemini" class="prompt-input" required style="flex: 1;">
+      <div class="prompt-actions" style="display: flex; align-items: center;">
+        <input type="file" id="file-input" style="display:none" />
+        <button id="add-file-btn" type="button" class="file-icon material-symbol-rounded"><i class="fa-solid fa-plus"></i></button>
+        <button type="button" id="stop-response-btn" class="materials-symbol-rounded"><i class="fa-solid fa-circle-stop"></i></button>
+        <button id="send-prompt-btn" type="button" class="materials-symbol-rounded"><i class="fa-solid fa-arrow-up"></i></button>
+      </div>
+    </form>
+     <button id="theme-toggle-btn"  type = "button" class="materials-symbol-rounded"><i class="fa-solid fa-sun"></i></button>
+     <button id="delete-chats-btn" type = "button"  class="materials-symbol-rounded"><i class="fa-solid fa-trash-can"></i></button>
+</div>
+<p class="disclaimer-text">Gemini can make mistakes, so double-check it</p>
+</div>
+
+  
+  
+<script src="Ai.js"></script>
+
+
+</body>
+</html>
